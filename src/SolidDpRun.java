@@ -1,3 +1,6 @@
+import com.desgnPatterns.solid.dip.Person;
+import com.desgnPatterns.solid.dip.Relationships;
+import com.desgnPatterns.solid.dip.Research;
 import com.desgnPatterns.solid.isp.Document;
 import com.desgnPatterns.solid.isp.ModernMachine;
 import com.desgnPatterns.solid.isp.MultiFunctionMachine;
@@ -17,7 +20,8 @@ public class SolidDpRun {
         //runSRP();
         //runOCP();
         //runLsp();
-        runIsp();
+        //runIsp();
+        runDip();
     }
     private static void runSRP() throws IOException {
         System.out.println("Hello from SRP");
@@ -75,6 +79,18 @@ public class SolidDpRun {
     private static void runIsp(){
         ModernMachine modernMachine =new ModernMachine();
         modernMachine.print(new Document());
+    }
+    private static void runDip(){
+        System.out.println("Hello from Dip");
+        Person parent = new Person("John");
+        Person child1 = new Person("Chris");
+        Person child2 = new Person("Matt");
+        Relationships relationships = new Relationships();
+        relationships.addParentAndChild(parent,child1);
+        relationships.addParentAndChild(parent,child2);
+        Research research = new Research(relationships);
+
+
     }
 
 }
