@@ -88,6 +88,7 @@ public class SolidDpRun {
         Relationships relationships = new Relationships();
         relationships.addParentAndChild(parent,child1);
         relationships.addParentAndChild(parent,child2);
+
         Research research = new Research(relationships);
 
 
