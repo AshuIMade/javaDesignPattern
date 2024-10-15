@@ -34,7 +34,7 @@ public class Rectangle {
 
     @Override
     public String toString() {
-        return "Rectangle{" +
+        return "VectorRectangle{" +
                 "width=" + width +
                 ", height=" + height +
                 '}';

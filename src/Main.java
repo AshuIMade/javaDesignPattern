@@ -4,6 +4,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
         //SolidDpRun.runSolids();
-        CreationlDpRun.runCreational();
+        //CreationlDpRun.runCreational();
+        InputOutputRun.runFileDemo();
+        //StructuralDpRun.demoAdapterDp();
+
+
     }
 }
