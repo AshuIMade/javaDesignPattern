@@ -5,9 +5,10 @@ public class Main {
         System.out.println("Hello world!");
         //SolidDpRun.runSolids();
         //CreationlDpRun.runCreational();
-        InputOutputRun.runFileDemo();
         //StructuralDpRun.demoAdapterDp();
-
+        //InputOutputRun.runFileDemo();
+        GenericsDemo.demoGeneric();
+        GenericsDemo.demoTwoGenerics();
 
     }
 }
