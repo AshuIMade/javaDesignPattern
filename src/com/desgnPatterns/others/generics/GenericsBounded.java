@@ -18,7 +18,16 @@ public class GenericsBounded<T extends Number> {
         }
         return sum/ nums.length;
     }
-    //public boolean sameAvg(GenericsBounded<T> gb){
-      //  return average() == gb.average();
-    //}
+    public boolean sameAvg(GenericsBounded<T> gb){
+        if(average() == gb.average())
+            return true;
+        return false;
+    }
+
+    //make it with wild card argument
+    public boolean sameAvgTwo(GenericsBounded<?> gb){
+        if(average() == gb.average())
+            return true;
+        return false;
+    }
 }

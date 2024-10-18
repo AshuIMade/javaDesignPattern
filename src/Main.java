@@ -9,6 +9,5 @@ public class Main {
         //InputOutputRun.runFileDemo();
         GenericsDemo.demoGeneric();
         GenericsDemo.demoTwoGenerics();
-
     }
 }
